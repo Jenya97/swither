@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="css/normlize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Healty Switcher</title>
+</head>
+
+<body>
+ <header class="header">
+    <div class="container header__container">
+      <a class="header__logo textDontShow animate" href="#">
+        <img class="logo" src="images/logo.png" alt="Healthy Switcher" >
+      </a>
+      <nav class="header__menu textDontShow animate">
+        <ul class="menu "  >
+          <li class="menu__item"><a class="menu__link" href="#">Menu</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Recipes</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Chefs</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Contacts</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- INTRO -->
+    <section class="intro">
+      <div class="container">
+        <h1 class="intro__title textDontShow animate"  >
+          Your <span>favourite food</span> <br>
+          delivered <span>hot & fresh</span>
+        </h1>
+        <p class="intro__text" >
+          HEALTHY SWITCHER chefs do all the prep work, like peeling, chopping & marinating, so you can cook a fresh homemade dinner in just 15 minutes.
+        </p>
+        <button class="intro__button">Order Now</button>
+        <ul class="intro__items">
+          <li class="intro__item intro-item intro-item--1"  >
+            <b class="intro-item__title">Today 10:00 am - 7:00 pm</b>
+            <p class="intro-item__text">Working hours</p>
+          </li>
+
+          <li class="intro__item intro-item intro-item--2"    >
+            <b class="intro-item__title">Velyka Vasylkivska 100</b>
+            <p class="intro-item__text">Get Directions</p>
+          </li>
+
+          <li class="intro__item intro-item intro-item--3"    >
+            <b class="intro-item__title"><a href="tel:+380638332415">+38 (063)833 24 15</a></b>
+            <p class="intro-item__text">Call Online</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about">
+      <div class="container">
+        <div class="about__body" >
+          <div class="about__body-container">
+            <div class="title title--decor--none about__title"    >
+              <h2 class="title__main">The Basics Of Healthy Food</h2>
+              <span class="title__decoration">ABOUT</span>
+            </div>
+            <p class="about__text"  >
+              In aliqua ea ullamco ad est ex non deserunt nulla. Consectetur sint ea aliquip aliquip consectetur voluptate est. Eu minim dolore laboris enim mollit voluptate irure esse aliquip.
+            </p>
+            <div class="about__images">
+              <div class="about__images-wrapper">
+                <div class="swiper-wrapper about__images-track">
+                 </div>
+              </div>
+              <button class="about__images-button about__images-button--prev" type="button"  ></button>
+              <button class="about__images-button about__images-button--next" type="button"  ></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="works">
+      <div class="container">
+        <div class="works__title title"  >
+          <h2 class="title__main">How it works</h2>
+          <span class="title__decoration">work</span>
+        </div>
+        <ul class="works__cards">
+          <li class="works__card works-card">
+            <div class="works-card__body">
+              <h3 class="works-card__title">Pick meals</h3>
+              <div class="works-card__line"></div>
+              <p class="works-card__text">
+                Choose your meals from our diverse weekly menu. Find gluten or dairy free, low carb & veggie options.
+              </p>
+            </div>
+          </li>
+          
+          <li class="works__card works-card" >
+            <div class="works-card__body">
+              <h3 class="works-card__title">Choose How Often</h3>
+              <div class="works-card__line"></div>
+              <p class="works-card__text">
+                Our team of chefs do the prep work - no more chopping, measuring, or sink full of dishes!
+              </p>
+            </div>
+          </li>
+          
+          <li class="works__card works-card">
+            <div class="works-card__body">
+              <h3 class="works-card__title">Fast Deliveries</h3>
+              <div class="works-card__line"></div>
+              <p class="works-card__text">
+                Your freshly prepped 15-min dinner kits arrive on your doorstep in a refrigerated box.
+              </p>
+            </div>
+          </li>
+          
+          <li class="works__card works-card">
+            <div class="works-card__body">
+              <h3 class="works-card__title">Tasty Meals</h3>
+              <div class="works-card__line"></div>
+              <p class="works-card__text">
+                Gobble makes cooking fast, so you have more time to unwind and be with family.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!--dishes-->
+      <section class="dishes container">
+      <h1>DISHES</h1>
+      <h2>Dish Of The Day</h2>
+      <hr />
+      <div class="dishes-cards">
+  
+      
+      </div>
+    </section>
+    <!-- /.dishes -->
+    <section class="chefs container">
+      <h1>CHEFS</h1>
+      <h2>This Month's Chefs</h2>
+      <hr />
+      <div class="chefs-cards">
+        <div class="chef">
+          <div class="chef-profile">
+            <img src="img/chefs/avatar1.png" alt="avatar1" class="chef-avatar" />
+            <div class="chef-profile-info">
+              <div class="chef-profile-name">Gregory Flores</div>
+              <div class="chef-profile-description">Chef of the cold</div>
+            </div>
+          </div>
+          <div class="chef-meals">
+            <img src="img/chefs/cold1.png" alt="cold1" />
+            <img src="img/chefs/cold2.png" alt="cold2" />
+            <img src="img/chefs/cold3.png" alt="cold3" />
+          </div>
+        </div>
+        <div class="chef">
+          <div class="chef-profile">
+            <img src="img/chefs/avatar2.png" alt="avatar2" class="chef-avatar" />
+            <div class="chef-profile-info">
+              <div class="chef-profile-name">Annette Cooper</div>
+              <div class="chef-profile-description">Chef of the hot</div>
+            </div>
+          </div>
+          <div class="chef-meals">
+            <img src="img/chefs/hot1.png" alt="hot1" />
+            <img src="img/chefs/hot2.png" alt="hot2" />
+            <img src="img/chefs/hot3.png" alt="hot3" />
+          </div>
+        </div>
+        <div class="chef">
+          <div class="chef-profile">
+            <img src="img/chefs/avatar3.png" alt="avatar3" class="chef-avatar" />
+            <div class="chef-profile-info">
+              <div class="chef-profile-name">Greg Fox</div>
+              <div class="chef-profile-description">Chef of macro kitchen</div>
+            </div>
+          </div>
+          <div class="chef-meals">
+            <img src="img/chefs/macro1.png" alt="macro1" />
+            <img src="img/chefs/macro2.png" alt="macro2" />
+            <img src="img/chefs/macro3.png" alt="macro3" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.chefs -->
+    <section class="recipes container">
+      <h1>RECIPES</h1>
+      <h2>Recipes From Our Chefs</h2>
+      <hr />
+      <div class="recipes-cards">
+        <div class="recipes-cards-block">
+          <div class="recipes-card recipes-card-big recipes-card-bg">
+            <span class="recipes-card-mealtime recipes-card-mealtime-big">Breakfast</span>
+            <span class="recipes-card-description">05 Jul 2016</span>
+            <p class="recipes-card-text recipes-card-text-big">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+            <span class="recipes-card-description">Jason Keller</span>
+            <span class="recipes-card-feedback">
+              <a href="#" class="recipes-card-feedback-link">
+                <img src="img/recipes/eye.png" class="recipes-card-feedback-img">
+                <img src="img/recipes/black-eye.png" class="recipes-card-feedback-img2">
+                <span class="recipes-card-feedback-count">275</span>
+              </a>
+              <a href="#" class="recipes-card-feedback-link">
+                <img src="img/recipes/qa.png" class="recipes-card-feedback-img">
+                <img src="img/recipes/black-qa.png" class="recipes-card-feedback-img2">
+                <span class="recipes-card-feedback-count">12</span>
+              </a>
+            </span>
+          </div>
+        </div>
+        <div class="recipes-cards-block recipes-cards-block-small">
+          <div class="recipes-card recipes-card-small recipes-card-nobg">
+            <p class="recipes-card-text recipes-card-text-small">Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut</p>
+            <div class="recipes-card-bottom">
+              <div class="recipes-card-bottom-left">
+                <span class="recipes-card-mealtime">Lunch</span>
+                <span class="recipes-card-date">05 Jul 2016</span>
+              </div>
+              <div class="recipes-card-bottom-right">
+                <span class="recipes-card-feedback">
+                  <a href="#" class="recipes-card-feedback-link">
+                    <img src="img/recipes/eye.png" class="recipes-card-feedback-img">
+                    <img src="img/recipes/black-eye.png" class="recipes-card-feedback-img2">
+                    <span class="recipes-card-feedback-count">275</span>
+                  </a>
+                  <a href="#" class="recipes-card-feedback-link">
+                    <img src="img/recipes/qa.png" class="recipes-card-feedback-img">
+                    <img src="img/recipes/black-qa.png" class="recipes-card-feedback-img2">
+                    <span class="recipes-card-feedback-count">12</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="recipes-card recipes-card-small recipes-card-bg">
+            <p class="recipes-card-text recipes-card-text-small">Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            <div class="recipes-card-bottom">
+              <div class="recipes-card-bottom-left">
+                <span class="recipes-card-mealtime">Dinner</span>
+                <span class="recipes-card-date">05 Jul 2016</span>
+              </div>
+              <div class="recipes-card-bottom-right">
+                <span class="recipes-card-feedback">
+                  <a href="#" class="recipes-card-feedback-link">
+                    <img src="img/recipes/eye.png" class="recipes-card-feedback-img">
+                    <img src="img/recipes/black-eye.png" class="recipes-card-feedback-img2">
+                    <span class="recipes-card-feedback-count">275</span>
+                  </a>
+                  <a href="#" class="recipes-card-feedback-link">
+                    <img src="img/recipes/qa.png" class="recipes-card-feedback-img">
+                    <img src="img/recipes/black-qa.png" class="recipes-card-feedback-img2">
+                    <span class="recipes-card-feedback-count">12</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="recipes-card recipes-card-small recipes-card-nobg">
+            <p class="recipes-card-text recipes-card-text-small">Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt</p>
+            <div class="recipes-card-bottom">
+              <div class="recipes-card-bottom-left">
+                <span class="recipes-card-mealtime">Sweets</span>
+                <span class="recipes-card-date">05 Jul 2016</span>
+              </div>
+              <div class="recipes-card-bottom-right">
+                <span class="recipes-card-feedback">
+                  <a href="#" class="recipes-card-feedback-link">
+                    <img src="img/recipes/eye.png" class="recipes-card-feedback-img">
+                    <img src="img/recipes/black-eye.png" class="recipes-card-feedback-img2">
+                    <span class="recipes-card-feedback-count">275</span>
+                  </a>
+                  <a href="#" class="recipes-card-feedback-link">
+                    <img src="img/recipes/qa.png" class="recipes-card-feedback-img">
+                    <img src="img/recipes/black-qa.png" class="recipes-card-feedback-img2">
+                    <span class="recipes-card-feedback-count">12</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.recipes -->
+    <section class="social container">
+      <h1>SOCIAL</h1>
+      <h2>We in Social</h2>
+      <hr />
+      <div class="social-cards">
+        <div class="social-card">
+          <div class="social-card-section social-card-top">
+            <div class="social-card-social">
+              <img src="img/social/twitter.png" alt="" class="social-card-social-logo" />
+              <span class="social-card-social-title">Twitter</span>
+            </div>
+            <button class="social-card-social-follow">Follow us</button>
+          </div>
+          <div class="social-card-section">
+            <span class="social-card-text social-card-text-date">24 Jun at 16:20 pm</span>
+            <p class="social-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut Lorem ipsum
+              dolor sit amet, consectetur adipiscing</p>
+            <span class="social-card-text social-card-text-author">@DennisFerguson</span>
+          </div>
+        </div>
+        <div class="social-card">
+          <div class="social-card-section social-card-top">
+            <div class="social-card-social">
+              <img src="img/social/instagram.png" alt="" class="social-card-social-logo" />
+              <span class="social-card-social-title">Instagram</span>
+            </div>
+            <button class="social-card-social-follow">Follow us</button>
+          </div>
+          <div class="social-card-section social-card-section-ig"></div>
+        </div>
+        <div class="social-card">
+          <div class="social-card-section social-card-top">
+            <div class="social-card-social">
+              <img src="img/social/facebook.png" alt="" class="social-card-social-logo" />
+              <span class="social-card-social-title">Facebook</span>
+            </div>
+            <button class="social-card-social-follow">Follow us</button>
+          </div>
+          <div class="social-card-section">
+            <span class="social-card-text-date">24 Jun at 16:20 pm</span>
+            <p class="social-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor
+              incididunt ut Lorem ipsum
+              dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.social -->
+ 
+  </main>
+
+  <footer class="footer">
+    <div class="hero-info container">
+      <div class="hero-info-time">
+        <img src="img/hero/time.png" />
+        <p class="hero-info-main">Today 10:00 am - 7:00 pm</p>
+        <div class="p hero-info-description">Working Hours</div>
+      </div>
+      <div class="hero-info-address">
+        <img src="img/hero/address.png" />
+        <p class="hero-info-main">Velyka Vasylkivska 100</p>
+        <div class="p hero-info-description">Get Directions</div>
+      </div>
+      <div class="hero-info-phone">
+        <img src="img/hero/phone.png" />
+        <p class="hero-info-main">+38 (063)833 24 15</p>
+        <div class="p hero-info-description">Call Online</div>
+      </div>
+    </div>
+    <hr />
+    <div class="footer-bottom">
+      <a href="#" class="footer-bottom-logo">
+        <img class="navbar-logo" src="img/logo.svg" alt="logo">
+      </a>
+      <div class="footer-bottom-copy">© Designed by Yellow Snow. All Rights Reserved.</div>
+    </div>
+  </footer>
+  <!-- /.footer -->
+  <script src="./script.js"></script>
+</body>
+
+</html>
