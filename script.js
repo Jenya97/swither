@@ -77,17 +77,17 @@ let page=1
 async function getProducts(){
    const responseAll= await fetch("https://retoolapi.dev/utHrhb/products")
    const dataAll=await responseAll.json()
-   console.log(dataAll.length);
-   const response= await fetch(`https://retoolapi.dev/utHrhb/products?_page=${page}&_limit=6`)
+  
+   const response= await fetch(`https://retoolapi.dev/utHrhb/products?_page=${2}&_limit=6`)
    const data=await response.json()
+   console.log(data);
     data.forEach((product)=>{
+    
       let div=document.createElement("div")
       div.classList.add("dishes-card")
       div.innerHTML=` 
       <div class="dishes-card-top">
-       <a href="product.html">
-       <img src="${product.image}" alt="meal1" class="dishes-card-img" /></a> 
-      </div>
+       <img src="${product.image}" alt="meal1" class="dishes-card-img" />
       <div class="dishes-card-title">${product.title}</div>
       <div class="dishes-card-subtitle">
         Served with french fries + drink
@@ -97,17 +97,34 @@ async function getProducts(){
       </div>
       <div class="dishes-card-bottom">
         <div class="dishes-card-bottom-rating">
-          <img src="img/dishes/star.png" alt="star" class="dishes-card-bottom-rating-star" />
-          <img src="img/dishes/star.png" alt="star" class="dishes-card-bottom-rating-star" />
-          <img src="img/dishes/star.png" alt="star" class="dishes-card-bottom-rating-star" />
-          <img src="img/dishes/star.png" alt="star" class="dishes-card-bottom-rating-star" />
-          <img src="img/dishes/star.png" alt="star" class="dishes-card-bottom-rating-star" />
-          <div class="dishes-card-bottom-rating-counter">12</div>
+        <i class="fa-sharp fa-solid fa-star"></i>
+        <i class="fa-sharp fa-solid fa-star"></i>
+        <i class="fa-sharp fa-solid fa-star"></i>
+        <i class="fa-sharp fa-solid fa-star"></i>
+        <i class="fa-sharp fa-solid fa-star"></i>
         </div>
         <button class="dishes-card-bottom-order">ORDER</button>
       </div>`
+      let rateSystem=div.querySelector(".dishes-card-bottom-rating")
+      Array.from(rateSystem.children).forEach((star,index)=>{
+         if(index<product.rate){
+            star.style.color="yellow"
+         }
+      })
+     let img=div.querySelector(".dishes-card-img");
+     img.addEventListener("click",()=>{
+      sessionStorage.setItem("productId",JSON.stringify(product.id))
+      location.href="product.html"
+     })
       dishes_cards.append(div)
-    })
- }
+  
+
+   })
+   // Array.from(Array(Math.ceil(dataAll.length/6))).forEach((i,index)=>{
+   //    let button=document.createElement("button")
+   //    button.innerText=index+1;
+   //    document.body.append(button)
+   // })
+   }
 
  getProducts()
