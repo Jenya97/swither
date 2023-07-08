@@ -4,7 +4,8 @@ const about__images__next=document.querySelector(".about__images-button--next");
 const about__images_wrapper=document.querySelector(".about__images-wrapper");
 const about__images_track=document.querySelector(".about__images-track");
 const dishes_cards=document.querySelector(".dishes-cards");
-
+const pagination=document.querySelector(".pagination")
+const dishes_pagination_parent=document.querySelector(".dishes_pagination_parent")
 function callBack(entries){
    entries.forEach(function(entry){
     // if(!entry.isIntersecting)  return 
@@ -74,15 +75,10 @@ about__images_wrapper.addEventListener("mousemove",function(e){
    about__images_wrapper.scrollLeft+=start-e.clientX
 })
 let page=1
-async function getProducts(){
-   const responseAll= await fetch("https://retoolapi.dev/utHrhb/products")
-   const dataAll=await responseAll.json()
-  
-   const response= await fetch(`https://retoolapi.dev/utHrhb/products?_page=${2}&_limit=6`)
+async function getData(){
+   const response= await fetch(`https://retoolapi.dev/utHrhb/products?_page=${page}&_limit=6`)
    const data=await response.json()
-   console.log(data);
-    data.forEach((product)=>{
-    
+   data.forEach((product)=>{ 
       let div=document.createElement("div")
       div.classList.add("dishes-card")
       div.innerHTML=` 
@@ -120,11 +116,21 @@ async function getProducts(){
   
 
    })
-   // Array.from(Array(Math.ceil(dataAll.length/6))).forEach((i,index)=>{
-   //    let button=document.createElement("button")
-   //    button.innerText=index+1;
-   //    document.body.append(button)
-   // })
+}
+async function getProducts(){
+   const responseAll= await fetch("https://retoolapi.dev/utHrhb/products")
+   const dataAll=await responseAll.json()
+   getData()
+   Array.from(Array(Math.ceil(dataAll.length/6))).forEach((i,index)=>{
+      let button=document.createElement("button")
+      button.innerText=index+1;
+      pagination.append(button)
+      button.addEventListener("click",(e)=>{
+         dishes_cards.innerHTML=""
+         page=e.target.innerText
+         getData()
+      })
+   })
    }
 
  getProducts()

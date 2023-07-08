@@ -724,7 +724,7 @@ h1, h2, h3, h4, h5, h6, b, strong {
 }
 
 .recipes-cards-block-small .recipes-card-bg {
-  background: url(../img/recipes/recipe2.png) center;
+  background: url(../img/recipe2.png) center;
   background-size: 100%;
 }
 
@@ -764,7 +764,7 @@ h1, h2, h3, h4, h5, h6, b, strong {
           justify-content: space-between;
   padding: 60px 90px;
   min-height: 510px;
-  background: url(../img/recipes/recipe1.png) center;
+  background: url(../img/recipe1.png) center;
 }
 
 .recipes-card-small {
@@ -1190,4 +1190,17 @@ h1, h2, h3, h4, h5, h6, b, strong {
   -webkit-transform:rotateX(0deg);
   transform:rotateX(0deg);
 
+}
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pagination button{
+  padding: 5px;
+  border: 1px solid;
+  color: #000;
+  background: #d9d9d9;
 }
